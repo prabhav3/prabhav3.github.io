@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.search-section .search-input {
+  min-width: 30rem;
+  padding: 1rem;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.filters > * {
+  padding: 0.2rem 0.4rem;
+  background: #ededed;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.images {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.images .image {
+  width: 200px;
+  height: 200px;
+  justify-self: center;
+  align-self: center;
+  margin-left: 2rem;
+  border-radius: 10px;
+  transition: all 0.2s;
+  object-fit: cover;
+}
+
+.images .image:hover {
+  transform: translateY(-7px);
+  width: 205px;
+  height: 205px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.buttons .navbtn {
+  background: transparent;
+  color: black;
+  border: 1px solid #ededed;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.buttons .navbtn:hover {
+  background: #ededed;
+  
+}
+
+/*.btn:hover {
+  background: red;
+  color: black;
+  border: 2px solid #ededed;
+}
+
+.btn:active {
+  background: #d1d1d1;
+  color: black;
+  border: 2px solid #d1d1d1;
+}*/
+
+.loading {
+  text-align: center;
+  margin-top: 1.25rem;
+  font-size: 1.2rem;
+}
